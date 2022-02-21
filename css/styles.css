@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+    padding:0;
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+
+}
+html,
+body {
+    background: #202020;
+    height: 100%;
+    line-height: 1;
+    font-size: 20px;
+    color: #DEDEDE;
+    font-family: Manrope;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+/* ---------------------------------------------------------------------------------------------- */
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+}
+/* ---------------------------------------------------------------------------------------------- */
+._container {
+    max-width: 1248px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+/* ------HEADER---------------------------------------------------------------------------------------- */
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background: rgba(50, 50, 50, 0.7);
+
+}
+.header__container{
+    display: flex;
+    min-height: 80px;
+    align-items:center;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+.header__logo{
+    display:flex;
+    font-size: 20px;
+    font-weight: 800;
+    color: inherit;
+    white-space: nowrap;
+    align-items: center;
+    gap:12px;
+}
+.header__menu{
+    min-width: 30px;
+    /*margin: 0px 0px 0px 820px;*/
+}
+.menu{
+}
+.menu__list{
+    flex-wrap:wrap;
+    font-size: 18px;
+    display:flex;
+    padding-right:14px;
+}
+.menu__item{
+
+}
+.menu__item:not(:last-child) {
+    margin: 0px 56px 0px 0px;
+}
+.menu__link{
+    color: inherit;
+    line-height: 25px;
+
+}
+/* --------PAGE-------------------------------------------------------------------------------------- */
+
+.page{
+    flex: 1 1 auto;
+}
+.page__main-block{
+
+}
+
+/* --------FOOTER-------------------------------------------------------------------------------------- */
+
+.footer{
+
+}
+/* --------MAIN-BLOCK-------------------------------------------------------------------------------------- */
+
+
+.main-block{
+
+}
+.main-block__container{
+    padding: 209px 15px 0px 15px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: start;
+}
+
+
+.main-block__body{
+    display:flex;
+    flex-direction:column;
+    max-width:506px;
+    margin-top: 31px;
+}
+.main-block__body > *:not(:last-child){
+    margin: 0px 0px 24px 0px;
+}
+
+.main-block__title{
+    font-size: 54px;
+    line-height: 119%;
+    font-weight: 700;
+}
+.main-block__text{
+    font-weight:600;
+    line-height: 150%;
+    max-width:395px;
+    color: rgba(149, 149, 149, 1);
+}
+.main-block__buttons{
+    padding-top:64px;
+    display:inline-flex;
+    background:inherit;
+}
+.main-block__button{
+    color: #FFFFFF;
+    font-size:18px;
+    background: #9D9D9D;
+    border-radius: 4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 48px;
+    max-width: 293.57px;
+    max-height: 57px;
+    line-height: 139%;
+    font-weight: 600;
+    gap:16px;
+}
+
+.main-block__image{
+    display:flex;
+    max-height:400px;
+    max-width:400px;
+    margin-right:106px;
+}
+
+.mail-logo{
+    width: 21px;
+    height: 16px;
+}
+
+@media (max-width: 1050px){
+    ._container {
+        padding: 0px 24px;
+    }
+    .main-block__container{
+        padding: 144px 24px 0px 24px;
+        justify-content:center;
+    }
+    .main-block__image{
+        height:240px;
+        width:240px;
+        margin-right:0px;
+    }
+    .main-block__title{
+        font-size: 36px;
+        line-height: 111%;
+        font-weight: 700;
+        text-align: center;
+    }
+    .main-block__text{
+        font-weight:500;
+        line-height: 144%;
+        max-width:395px;
+        text-align:center;
+    }
+    .main-block__body > *:not(:last-child){
+        margin: 0px 0px 20px 0px;
+    }
+    .main-block__buttons{
+        padding-top:48px;
+        justify-content:center;
+    }
+    .main-block__button{
+        max-width: 242px;
+        max-height: 57px;
+    }
+}
